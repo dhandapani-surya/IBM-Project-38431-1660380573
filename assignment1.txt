@@ -1,0 +1,104 @@
+1.
+que="Hi there sam!"
+ans=que.split()
+print(ans)
+
+output
+[‘Hi', 'there', 'sam!']
+
+2.
+print('The diameter of the {} is {} kilometers'.format('Earth', '12742'))
+
+output
+The diameter of the Earth is 12742 kilometers
+
+
+
+4.a.
+import numpy as np
+a=np.zeros(10)
+print(a)
+
+output
+[0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+
+4.b.
+import numpy as np
+a=np.ones(10)*5
+print(a)
+
+output
+[5. 5. 5. 5. 5. 5. 5. 5. 5. 5.]
+
+5.
+import numpy as np
+array=np.arange(20,31,2)
+print("array of even integers from 20 to 30")
+print(array)
+
+output
+array of even integers from 20 to 30
+[20 22 24 26 28 30]
+
+6.
+import numpy as np
+m=np.arange(0,9).reshape(3,3)
+print(m)
+
+output                                 
+[[0 1 2]
+ [3 4 5]
+ [6 7 8]]>
+
+7.
+import numpy as np
+a=np.array([1,2,3])
+b=np.array([4,5,6])
+con=np.concatenate((a,b),axis= 0)
+print(con)
+
+output
+[1 2 3 4 5 6]
+
+8.
+import pandas as pd
+lst=[[1,'aaa',22],[2,'bbb',25],[3,'ccc',24]]
+df=pd.DataFrame(lst,columns=['Sno','Alphabets','val'])
+print(df)
+
+output
+Sno Alphabets  val
+0    1       aaa   22
+1    2       bbb   25
+2    3       ccc   24
+
+9.
+import datetime
+import pandas as pd
+test_date = datetime.datetime.strptime("01-01-2023", "%d-%m-%Y")
+K = 10
+date_generated = pd.date_range(test_date, periods=K)
+print(date_generated.strftime("%d-%m-%Y"))
+
+output
+Index(['01-01-2023', '02-01-2023', '03-01-2023', '04-01-2023', '05-01-2023',
+       '06-01-2023', '07-01-2023', '08-01-2023', '09-01-2023', '10-01-2023'],
+      dtype='object')
+
+
+10.
+import pandas as pd  
+lst = [[1,'aaa', 22], [2,'bbb', 25], 
+       [3,'ccc', 24]] 
+  
+# creating df object with columns specified    
+df = pd.DataFrame(lst, columns =['sno','name', 'number']) 
+print(df )
+
+output
+
+sno name  number
+0    1  aaa      22
+1    2  bbb      25
+2    3  ccc      24
+
